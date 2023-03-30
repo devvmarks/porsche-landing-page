@@ -1,0 +1,143 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    grid-template-areas: 'header header header'
+        'principal principal principal'
+        'infos infos infos';
+
+}
+
+.header {
+    grid-area: header;
+}
+
+.header .header-container .menu .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    margin-left: 50px;
+    background: url(src/images/logo.webp);
+    width: 120px;
+}
+
+.header .header-container .menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.header .header-container .menu li a {
+    padding: 10px 35px;
+    color: var(--header-color-links);
+}
+
+.turbo-911 {
+    grid-area: principal;
+    background: black url(src/images/principal.webp) center center no-repeat;
+    background-size: cover;
+    min-height: 95vh;
+    max-width: 100%;
+}
+
+
+.turbo-911 .title {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 90px;
+    padding-top: 80px;
+}
+
+.cayman-718 {
+    grid-area: principal;
+    background: black url(src/images/718-principal.webp) center center no-repeat;
+    background-size: cover;
+    min-height: 95vh;
+    max-width: 100%;
+}
+
+.cayman-718 .title {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 90px;
+    padding-top: 80px;
+}
+
+.infos {
+    grid-area: infos;
+    min-height: 50vh;
+    display: flex;
+    background-color: #000;
+}
+
+.infos img {
+    height: 500px;
+    max-width: auto;
+    color: var(--text-color);
+
+}
+
+
+.infos .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.infos .sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--text-color);
+}
+
+.infos .sobre h2 {
+    margin: 20px 20px;
+    color: #800;
+}
+
+.infos .sobre p {
+    font-size: 16px;
+    font-weight: 300;
+    width: 770px;
+}
+
+.infos .dados {
+    margin-top: 65px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+}
+
+.infos .dados .conteudo {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.infos .dados .conteudo h3 {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.infos .dados .conteudo h3:hover {
+    color: var(--hover-color);
+}
+
+.infos .dados .conteudo p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.infos .container .btn {
+    display: flex;
+    justify-content: center;
+    margin: 25px 80px;
+    color: #800;
+}
