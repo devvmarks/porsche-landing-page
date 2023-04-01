@@ -6,8 +6,12 @@ body {
 
 }
 
+
 .header {
     grid-area: header;
+    /* position: fixed;
+    width: 100%; */
+    background-color: #fff;
 }
 
 .header .header-container .menu .logo {
@@ -16,7 +20,7 @@ body {
     align-items: center;
     padding: 40px;
     margin-left: 50px;
-    background: url(src/images/logo.webp);
+    background: url(../images/logo.webp);
     width: 120px;
 }
 
@@ -32,11 +36,20 @@ body {
     color: var(--header-color-links);
 }
 
+
+
+.container .history {
+    background: url(../images/porsche\ logo\ wallpaper.jpg) center center no-repeat;
+    background-size: cover;
+    min-height: 110vh;
+    display: flex;
+}
+
 .turbo-911 {
     grid-area: principal;
-    background: black url(src/images/principal.webp) center center no-repeat;
+    background: black url(../images/911-principal.webp) center center no-repeat;
     background-size: cover;
-    min-height: 95vh;
+    min-height: 100vh;
     max-width: 100%;
 }
 
@@ -46,12 +59,12 @@ body {
     justify-content: center;
     color: white;
     font-size: 90px;
-    padding-top: 80px;
+    padding-top: 100px;
 }
 
 .cayman-718 {
     grid-area: principal;
-    background: black url(src/images/718-principal.webp) center center no-repeat;
+    background: black url(../images/718-principal.webp) center center no-repeat;
     background-size: cover;
     min-height: 95vh;
     max-width: 100%;
@@ -65,6 +78,11 @@ body {
     padding-top: 80px;
 }
 
+.turbo-911,
+.cayman-718 {
+    visibility: hidden;
+}
+
 .infos {
     grid-area: infos;
     min-height: 50vh;
@@ -76,9 +94,7 @@ body {
     height: 500px;
     max-width: auto;
     color: var(--text-color);
-
 }
-
 
 .infos .container {
     display: flex;

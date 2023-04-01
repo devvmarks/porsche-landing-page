@@ -1,0 +1,60 @@
+.footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: " copyright email telefone redes-sociais";
+    align-items: center;
+    height: 20vh;
+}
+
+.copyright p {
+    grid-area: copyright;
+    font-size: 14px;
+    justify-content: flex-start;
+    margin: 25px;
+}
+
+.footer .contact {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer .contact .item {
+    font-size: 14px;
+    margin: 0 20px;
+}
+
+.footer .contact .item h2 {
+    font-size: 16px;
+}
+
+.item.email {
+    grid-area: email;
+}
+
+.item.email h2 {
+    padding: 5px 80px;
+}
+
+.item.number {
+    grid-area: telefone;
+}
+
+.item.number h2 {
+    padding: 5px 20px;
+}
+
+.item.socials {
+    grid-area: redes-sociais;
+}
+
+.item.socials h2 {
+    padding: 5px 60px;
+}
+
+.item.socials .socials-content {
+    display: flex;
+}
+
+.item.socials .socials-content .item {
+    font-size: 16px;
+}
