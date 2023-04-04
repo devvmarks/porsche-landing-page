@@ -9,49 +9,21 @@ main{
     background-color: black;
 }
 
-
-.header {
-    grid-area: header;
-    /* position: fixed;
-    width: 100%; */
-    background-color: rgb(255, 255, 255);
-
-}
-
-.header .header-container .menu .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
-    margin-left: 50px;
-    background: url(../images/logo.png);
-    width: 120px;
-}
-
-.header .header-container .menu {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-
-}
-
-.header .header-container .menu li a {
-    padding: 10px 35px;
-    color: var(--header-color-links);
-}
-
-
-
 .container .history {
     background: url(../images/porsche\ logo\ wallpaper.jpg) center center no-repeat;
     background-size: cover;
     min-height: 110vh;
     display: flex;
+    transition: 1.5s;
+}
+
+.container .history:hover{
+    opacity: 0.2;
 }
 
 .turbo-911 {
     grid-area: principal;
-    background: black url(../images/911-principal.webp) center center no-repeat;
+    background: black url(../images/911-principal.jpg) center center no-repeat;
     background-size: cover;
     min-height: 100vh;
     max-width: 100%;
@@ -68,7 +40,7 @@ main{
 
 .cayman-718 {
     grid-area: principal;
-    background: black url(../images/718-principal.webp) center center no-repeat;
+    background: black url(../images/718-principal.jpg) center center no-repeat;
     background-size: cover;
     min-height: 95vh;
     max-width: 100%;
@@ -116,7 +88,7 @@ main{
 
 .infos .sobre h2 {
     margin: 20px 20px;
-    color: #800;
+    color: var(--about-color);
 }
 
 .infos .sobre p {
@@ -159,5 +131,5 @@ main{
     display: flex;
     justify-content: center;
     margin: 25px 80px;
-    color: #800;
+    color: var(--about-color);
 }

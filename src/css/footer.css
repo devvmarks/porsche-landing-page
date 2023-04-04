@@ -4,6 +4,7 @@
     grid-template-areas: " copyright email telefone redes-sociais";
     align-items: center;
     height: 20vh;
+    background-color: #000000;
 }
 
 .copyright p {
@@ -11,6 +12,7 @@
     font-size: 14px;
     justify-content: flex-start;
     margin: 25px;
+    color: #ffffff;
 }
 
 .footer .contact {
@@ -33,6 +35,12 @@
 
 .item.email h2 {
     padding: 5px 80px;
+    color: #ffffff;
+}
+
+.item.email p {
+    color: #ffffff;
+    margin-top: 5px;
 }
 
 .item.number {
@@ -41,6 +49,12 @@
 
 .item.number h2 {
     padding: 5px 20px;
+    color: #ffffff;
+}
+
+.item.number p {
+    color: #ffffff;
+    margin-top: 5px;
 }
 
 .item.socials {
@@ -49,12 +63,18 @@
 
 .item.socials h2 {
     padding: 5px 60px;
+    color: #ffffff;
 }
 
 .item.socials .socials-content {
     display: flex;
+    margin-top: 5px;
 }
 
 .item.socials .socials-content .item {
     font-size: 16px;
+}
+
+.item.socials .socials-content .item a {
+    color: #ffffff;
 }
