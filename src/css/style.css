@@ -1,11 +1,11 @@
 body {
     font-family: 'Poppins', sans-serif;
-    grid-template-areas: 'header header header'
+    /* grid-template-areas: 'header header header'
         'principal principal principal'
-        'infos infos infos';
+        'infos infos infos'; */
 }
 
-main{
+main {
     background-color: black;
 }
 
@@ -13,24 +13,38 @@ main{
     background: url(../images/porsche\ logo\ wallpaper.jpg) center center no-repeat;
     background-size: cover;
     min-height: 110vh;
-    display: flex;
     transition: 1.5s;
 }
 
-.container .history:hover{
-    opacity: 0.2;
+.container .history:hover {
+    opacity: 0.3;
+}
+
+.container .history .title-1 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 90px;
+    padding-top: 200px;
+    opacity: 0;
+}
+
+.container .history:hover .title-1 {
+    opacity: 1;
+    transition: 1.5s ease-in-out;
+    transform: translateY(150px);
 }
 
 .turbo-911 {
-    grid-area: principal;
+    /* grid-area: principal; */
     background: black url(../images/911-principal.jpg) center center no-repeat;
     background-size: cover;
-    min-height: 100vh;
-    max-width: 100%;
+    min-height: 110vh;
+    width: 100%;
 }
 
 
-.turbo-911 .title {
+.turbo-911 .title-2 {
     display: flex;
     justify-content: center;
     color: white;
@@ -39,14 +53,14 @@ main{
 }
 
 .cayman-718 {
-    grid-area: principal;
+    /* grid-area: principal; */
     background: black url(../images/718-principal.jpg) center center no-repeat;
     background-size: cover;
     min-height: 95vh;
     max-width: 100%;
 }
 
-.cayman-718 .title {
+.cayman-718 .title-3 {
     display: flex;
     justify-content: center;
     color: white;
@@ -60,7 +74,7 @@ main{
 }
 
 .infos {
-    grid-area: infos;
+    /* grid-area: infos; */
     min-height: 50vh;
     display: flex;
     background-color: #000;

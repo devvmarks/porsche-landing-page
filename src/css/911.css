@@ -2,11 +2,61 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-main{
+main {
     background-color: black;
 }
 
-.container .images {
+.container .images img {
     display: flex;
-    width: 615px;
+    width: 100%;
+    height: 90vh;
+}
+
+.container .images .title-1{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 100px;
+    padding-top: 150px;
+    
+}
+
+.infos {
+    /* grid-area: infos; */
+    min-height: 50vh;
+    display: flex;
+    background-color: #000;
+}
+
+.infos img {
+    height: 500px;
+    max-width: auto;
+    color: var(--text-color);
+    margin-top: 90px;
+}
+
+.infos .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.infos .sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--text-color);
+    margin-top: 90px;
+}
+
+.infos .sobre h2 {
+    margin: 20px 20px;
+    color: var(--about-color);
+}
+
+.infos .sobre p {
+    font-size: 16px;
+    font-weight: 300;
+    width: 770px;
 }
