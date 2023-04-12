@@ -1,7 +1,7 @@
 
 window.sr = ScrollReveal({ reset: true });
 
-sr.reveal('.turbo-911', { duration: 5000 });
+sr.reveal('.gt3-911', { duration: 5000 });
 
 sr.reveal('h2', { duration: 1000 });
 

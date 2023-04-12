@@ -1,8 +1,5 @@
 body {
     font-family: 'Poppins', sans-serif;
-    /* grid-template-areas: 'header header header'
-        'principal principal principal'
-        'infos infos infos'; */
 }
 
 main {
@@ -35,8 +32,7 @@ main {
     transform: translateY(150px);
 }
 
-.turbo-911 {
-    /* grid-area: principal; */
+.gt3-911 {
     background: black url(../images/911-principal.jpg) center center no-repeat;
     background-size: cover;
     min-height: 110vh;
@@ -44,7 +40,7 @@ main {
 }
 
 
-.turbo-911 .title-2 {
+.gt3-911 .title-2 {
     display: flex;
     justify-content: center;
     color: white;
@@ -53,7 +49,6 @@ main {
 }
 
 .cayman-718 {
-    /* grid-area: principal; */
     background: black url(../images/718-principal.jpg) center center no-repeat;
     background-size: cover;
     min-height: 95vh;
@@ -68,13 +63,12 @@ main {
     padding-top: 80px;
 }
 
-.turbo-911,
+.gt3-911,
 .cayman-718 {
     visibility: hidden;
 }
 
 .infos {
-    /* grid-area: infos; */
     min-height: 50vh;
     display: flex;
     background-color: #000;
@@ -102,7 +96,14 @@ main {
 
 .infos .sobre h2 {
     margin: 20px 20px;
-    color: var(--about-color);
+}
+
+.infos .sobre .title-911{
+    color: var(--911-color);
+}
+
+.infos .sobre .title-718{
+    color: var(--718-color);
 }
 
 .infos .sobre p {
@@ -145,5 +146,12 @@ main {
     display: flex;
     justify-content: center;
     margin: 25px 80px;
-    color: var(--about-color);
+}
+
+.infos .container .btn.btn-911{
+    color: var(--911-color)
+}
+
+.infos .container .btn.btn-718{
+    color: var(--718-color)
 }
