@@ -43,12 +43,19 @@ main {
 .dados .conteudo p {
     font-size: 16px;
     font-weight: 300;
+    padding: 30px;
 }
 
 .container .images .img-2 {
     background: url(../images/pagina-911/detalhes.jpg) center center no-repeat;
     background-size: cover;
     min-height: 110vh;
+}
+
+.porsche-911-video {
+    display: flex;
+    justify-content: center;
+
 }
 
 .container .images .title {

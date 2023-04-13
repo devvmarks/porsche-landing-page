@@ -45,6 +45,12 @@ main {
     font-weight: 300;
 }
 
+.porsche-718-video {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
 .container .images .img-2 {
     background: url(../images/pagina-718/detalhes.jpg) center center no-repeat;
     background-size: cover;
